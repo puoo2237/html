@@ -12,32 +12,23 @@
         <table>
             <tr>
                 <td colspan="2">
-                    다음 <mark style="background-color: orange;"><b>내용에 맞게 입력</b></mark>하시오
-                </td>
-                <td rowspan="5">
-                    <image src="cutydog.jpg"></image>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    전공 분야를 입력하세요. <select size="1" name="major">
+                    다음 <span style="background-color: orange;"><b>내용에 맞게 입력</b></span>하시오<br>전공 분야를 입력하세요. 
+                    <select size="1" name="major">
                         <option value="v1">소프트웨어</option>
                         <option value="v2">경영</option>
                         <option value="v3">경제</option>
                     </select>
                 </td>
+                <td rowspan="2">
+                    <image src="cutydog.jpg" height="160" align="center"></image>
+                </td>
             </tr>
             <tr>
-                <td width="60px">이름</td>
-                <td><input type="text" size="20"></td>
-            </tr>
-            <tr>
-                <td width="60px">아이디</td>
-                <td><input type="text" size="20"></td>
-            </tr>
-            <tr>
-                <td width="60px">비밀번호</td>
-                <td><input type="text" size="20" required pattern="(?=.*[a-z])(?=.*[0-9])[a-z0-9]{8,}"></td>
+                <td width="60px">이름<br>아이디<br>비밀번호</td>
+                <td><input type="text" size="20"><br>
+                    <input type="text" size="20"><br>
+                    <input type="text" size="20" required pattern="(?=.*[a-z])(?=.*[0-9])[a-z0-9]{8,}">
+                </td>
             </tr>
             <tr>
                 <td colspan="3">
@@ -57,18 +48,10 @@
                         <label for="book&study">책 읽으며 공부하기</label><input id="book&study" type="checkbox" name="hobby">
                         <label for="computer">컴퓨터</label><input id="computer" type="checkbox" name="hobby">
                     </fieldset>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
                     <fieldset style="width: 500px;">
                         <legend>하고 싶은 말</legend>
                         <textarea style="width: 500px; height: 80px; overflow-y: scroll;"></textarea>
                     </fieldset>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
                     <input type="submit" value="완료">
                     <input type="reset" value="다시 작성">
                 </td>
